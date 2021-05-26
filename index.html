@@ -11,9 +11,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 
     <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+   
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script><script type="text/javascript" src="fullpage.js"></script>
 
-
-    <title>CodePen - Fullpage.js demo</title>
+    <title>Group 12 - Transition of Travel Mode in London </title>
 
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
@@ -245,7 +246,8 @@
         }
 
         nav li:nth-child(odd) a,
-        body.fp-viewing-fifthSection-1 #menu li:nth-child(5) a {
+        
+        body.fp-viewing-page15-1 #menu li:nth-child(6) a {
             background: #962D3E;
         }
 
@@ -260,17 +262,21 @@
         nav li:nth-child(even) a:hover {
             background: #c53c52;
         }
-         nav li:nth-child(even) a:hover {
+
+        nav li:nth-child(even) a:hover {
             background: #f6d55c;
         }
-         nav li:nth-child(even) a:hover {
+
+        nav li:nth-child(even) a:hover {
             background: #ed553b;
         }
 
+/*
         nav li.active a,
         body.fp-viewing-sixthSection-1 #menu li:last-child a {
             background: #453659;
         }
+*/
 
 
 
@@ -292,13 +298,13 @@
             font-weight: 300;
             font-size: 2.8em;
         }
-        
-        h4{
+
+        h4 {
             font-size: 4em;
             margin-bottom: 20px;
         }
-        
-        h5{
+
+        h5 {
             font-weight: 300;
             font-size: 2.8em;
             margin-left: 20%;
@@ -367,6 +373,25 @@
                 padding: 3px;
             }
         }
+        
+/*
+        .homepage{  
+            position: relative; 
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+        
+        .homepage:before{ 
+              z-index:1;
+              content: "";
+              background-image: url('./londonHome.jpg');
+              background-size: cover;
+              position: absolute;
+            
+              opacity: 0.5;}
+*/
 
     </style>
 
@@ -380,7 +405,7 @@
 <body translate="no">
     <header>
         <div class="header-top clearfix">
-            <h1 class="l-left"><a href="#firstSection">Transition of Travel Mode in London</a></h1>
+            <h1 class="l-left"><a href="#page1">Transition of Travel Mode in London</a></h1>
             <a class="l-right toggle-menu" href="#">
                 <i></i>
                 <i></i>
@@ -390,81 +415,108 @@
 
         <nav class="hide">
             <ul id="menu">
-                <li data-menuanchor="firstSection">
-                    <a href="#firstSection" title="First Section">Home</a>
+                <li data-menuanchor="page1">
+                    <a href="#page1" title="page1">Home</a>
                 </li>
-                <li data-menuanchor="secondSection">
-                    <a href="#secondSection" title="Second Section">Intro</a>
+
+                <li data-menuanchor="page2">
+                    <a href="#page2" title="page2">Intro</a>
                 </li>
-                <li data-menuanchor="thirdSection">
-                    <a href="#thirdSection" title="Second Section">Transportation of London</a>
+
+
+                <!--                huixin-->
+                <li data-menuanchor="page3">
+                    <a href="#page3" title="page3">Overview</a>
                 </li>
-                <li data-menuanchor="fourthSection">
-                    <a href="#fourthSection" title="Fourth Section">Energy Consumption</a>
+
+
+                <!--       zheqian         -->
+                <li data-menuanchor="page8">
+                    <a href="#page8" title="page8">Energy Consumption</a>
                 </li>
-                  <li data-menuanchor="fifthSection">
-                    <a href="#fifthSection" title="Fifth Section">Private Transportation</a>
+
+
+
+
+                <li data-menuanchor="page12">
+                    <a href="#page12" title="page12">Private Transportation</a>
                 </li>
-                <li data-menuanchor="sixthSection">
-                    <a href="#sixthSection" title="First Slide">Public Transportation</a>
+
+
+                <li data-menuanchor="page15">
+                    <a href="#page15" title="page15">Public Transportation</a>
                 </li>
-                <li data-menuanchor="sixthSection/1">
-                    <a href="#sixthSection/1" title="Second Slide">Comparation map</a>
+
+                <!--
+                <li data-menuanchor="seventhSection">
+                    <a href="#seventhSection" title="seventhSection">Others</a>
                 </li>
-                
+-->
+
             </ul>
         </nav>
     </header>
 
     <div id="fullpage">
-        <section class="vertical-scrolling">
-            <h4>Transportation of London</h4>
+        <!--        page1-->
+        <section  id = "homePage" class="vertical-scrolling" data-anchor="page1" style="background-image:url(./londonHome.jpg); background-color: rgba(255,255,255, 0.1); background-size: cover">
+            <h4>Transition of Travel Mode in London</h4>
             <h5>Transportation of London</h5>
             <div class="scroll-icon">
-                <p>Jump into the last slide</p>
-                <a href="#fifthSection/1" class="icon-up-open-big"></a>
+                <p>Start</p>
+                <a href="#page2" class="icon-up-open-big"></a>
             </div>
         </section>
-        
+
         <!-- start of Huixin -->
-    <div id="fullpage">
-        <section class="vertical-scrolling">
-            <div class="horizontal-scrolling">
-                <p align="center"><img src="./London.svg" width="500">
-                    <p><br><br> 
-                        <h3>Introduction</h3>
-                        <br>
-                        <h4>On this website, you could explore transition of travel mode in London in four parts.</h4>
-                        <br>
-                        <h4>In each part, there are related policy which help you to understand the interactive maps and charts.</h4><br>
-                    <h3 style="font-size: 1.5em">
-                    </p>
+        <!--        page2-->
+        <section  class="vertical-scrolling" data-anchor="page2">
+
+            <!--            <p align="center">-->
+
+            <img src="./London.svg" width="500">
+            <div>
+                <br><br>
+                <h3>Introduction</h3>
+                <br>
+                <h4>On this website, you could explore transition of travel mode in London in four parts.</h4>
+                <br>
+                <h4>In each part, there are related policy which help you to understand the interactive maps and charts.</h4><br>
             </div>
         </section>
 
-        <section class="vertical-scrolling">
-            <p align="center"><img src="./Road.svg" width="300">
-                    <p><br><br> 
-                        <h3>Transport of London</h3>
-                        <br>
-                        <h4>In this part, you will have an overviw of transport in London through the decade (2010-2021).</h4>
-                        <br>
-                        <h4>Firstly, We will show you the road travel density in London from 2010-2019.</h4>
-                    </p>
-                </section>
+        <!--        page3-->
+        <section  class="vertical-scrolling" data-anchor="page3">
 
-        <section class="vertical-scrolling">
+            <!--            <p align="center">-->
+
+            <img src="./Road.svg" width="300">
+            <div>
+                <br><br>
+                <h3>Transport of London</h3>
+                <br>
+                <h4>In this part, you will have an overviw of transport in London through the decade (2010-2021).</h4>
+                <br>
+                <h4>Firstly, We will show you the road travel density in London from 2010-2019.</h4>
+            </div>
+        </section>
+
+
+        <!--        page4-->
+        <section  class="vertical-scrolling" data-anchor="page4">
             <div class="horizontal-scrolling">
-                <iframe src="./Travel Density 2010-2019.html" height="700px" width="100%" frameBorder="0" ></iframe>
+                <iframe src="./Travel Density 2010-2019.html" height="700px" width="100%" frameBorder="0"></iframe>
             </div>
             <div class="horizontal-scrolling">
                 <h4>This map presents London road travel density from 2010-2019, using millions of data of road traffic bulk downloads for all count point locations in UK from Department for Transport.</h4><br>
                 <h4>The datasets contain travel density by count points in 10 years. We joined the data with major and minor roads of London and make them to be the line data. </h4><br>
                 <h4>The travel density of each road including pedal cycles, two wheeled motor vehicles, cars and taxis, buses and coaches in one year.</h4>
             </div>
+
             <div class="horizontal-scrolling">
-                <iframe src="./charts.html" height="700px" width="100%" frameBorder="0" ></iframe>
+                <iframe src="./charts.html" height="700px" width="100%" frameBorder="0"></iframe>
             </div>
+
             <div class="horizontal-scrolling">
                 <h4>This line chart shows the London travel density by transportations by years.</h4><br>
                 <h4>Using the same datasets with the map. Data can be displayed when hovering the line chart. </h4><br>
@@ -473,160 +525,171 @@
             </div>
         </section>
 
-        <section class="vertical-scrolling">
-            <h3>Trips by Purpose and Main Mode</h3><br>
-            <h4>Here is a chart shows the trips by purpose and main mode in England in 2019.</h4><br>
-            <h4>The car/van is main mode for all travel purposes. People prefer to walk for education or personal business reasons.</h4><br>
-            <h4>For business purpose, people always choose car and rail for convenience.</h4>
+
+
+        <!--        page5-->
+        <section class="vertical-scrolling" data-anchor="page5">
+            <div style='right:50%; width:40%; float: right'>
+                <h3>Trips by Purpose and Main Mode</h3><br>
+                <h4>Here is a chart shows the trips by purpose and main mode in England in 2019.</h4><br>
+                <h4>The car/van is main mode for all travel purposes. People prefer to walk for education or personal business reasons.</h4><br>
+                <h4>For business purpose, people always choose car and rail for convenience.</h4>
+            </div>
+            <div style='left:50%; width:60%; float: left'>
+                <iframe src="./charts_2.html" height="700px" width="80%" frameBorder="0"></iframe>
+            </div>
+
         </section>
 
-        <section class="vertical-scrolling">
-            <div class="horizontal-scrolling">
-                <iframe src="./charts_2.html" height="700px" width="100%" frameBorder="0" ></iframe>
+
+
+
+
+        <!--        page6-->
+        <section  class="vertical-scrolling" data-anchor="page6">
+            <div>
+                <h4>London Public Transport Journeys by Type</h4><br>
+                <h4>How people go out?</h4><br>
+                <h4>Is there any changes during pendemic period (COVID-19)?</h4><br>
+                <h4>Does the policy take a role on the changes?</h4>
             </div>
         </section>
 
-        <section class="vertical-scrolling">
-            <h3>London Public Transport Journeys by Type</h3><br>
-            <h4>How people go out?</h4><br>
-            <h4>Is there any changes during pendemic period (COVID-19)?</h4><br>
-            <h4>Does the policy take a role on the changes?</h4>
+        <!--        page7-->
+        <section  class="vertical-scrolling" data-anchor="page7">
+            <div class="horizontal-scrolling">
+                <div style='right:50%; width:40%; float: right'><iframe src="charts_3.html" height="800px" width="1000hv" frameBorder="0"></iframe></div>
+
+                <div style='left:50%; width:60%; float: left'>
+                    <h5>The pie charts show the percentage of London public transport by type.</h5><br>
+                    <h5>The first pie chart uses data from 2010 to 2021. The second one shows the data under pandemic (COVID-19). </h5><br>
+                </div>
+            </div>
+
+
+            <div class="horizontal-scrolling">
+                <div><iframe src="charts_4.html" height="700px" width="100%" frameBorder="0" ;></iframe>
+                </div>
+
+                <div>
+                    <h5>The data from 2020 (under pandemic) are much lesser than common data before, so two y-axes are much easier to understand in this line chart.</h5><br>
+                    <h5>The trend from March 2020 changes right fit the lockdown policy timeline. </h5><br>
+                </div>
+
+            </div>
         </section>
 
-        <section class="vertical-scrolling">
-            <div class="horizontal-scrolling">
-                <iframe src="charts_3.html" height="700px" width="100%" frameBorder="0" ></iframe>
+        <!-- end of Huixin -->
+
+
+
+        <!--start of zzq-->
+        <!--page8-->
+
+        <section  class="vertical-scrolling" data-anchor="page8">
+            <div>
+                <h3>Energy Consumption</h3>
+
+                <h4>The amount of CO2 road vehicles emit directly related to the amount of fuel they consume. A line chart is used in order to identify the total fuel consumption trends by different transports from 2005 to 2018. A map shows the distribution of road CO2 emission in Greater London based on the data from 2008 to 2020 and its forecast until 2030.</h4>
             </div>
-            <div class="horizontal-scrolling">
-                <h4>The pie charts show the percentage of London public transport by type.</h4><br>
-                <h4>The first pie chart uses data from 2010 to 2021. The second one shows the data under pandemic (COVID-19). </h4><br>
-            </div>
-            <div class="horizontal-scrolling">
-                <iframe src="charts_4.html" height="700px" width="100%" frameBorder="0" ></iframe>
-            </div>
-            <div class="horizontal-scrolling">
-                <h4>The data from 2020 (under pandemic) are much lesser than common data before, so two y-axes are much easier to understand in this line chart.</h4><br>
-                <h4>The trend from March 2020 changes right fit the lockdown policy timeline. </h4><br>
-            </div>
-            <div class="horizontal-scrolling">
-                <img src="./Lockdownpolicy.jpg" height="700px" width="70%">
-            </div>   
         </section>
-    </div>
-    <!-- end of Huixin -->
- 
-    
-    
- <!--start of zzq-->
 
-<section class="vertical-scrolling">
-    <h3>Energy Consumption</h3>
+        <!--page9-->
+        <section  class="vertical-scrolling" data-anchor="page9">
 
-    <h4>The amount of CO2 road vehicles emit directly related to the amount of fuel they consume. A line chart is used in order to identify the total fuel consumption trends by different transports from 2005 to 2018. A map shows the distribution of road CO2 emission in Greater London based on the data from 2008 to 2020 and its forecast until 2030.</h4> 
-</section>
+            <head>
+                <title>Total fuel consumption</title>
 
+                <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+                <script type="text/javascript">
+                    function initViz() {
+                        var containerDiv = document.getElementById("vizContainer"),
+                            url = "https://public.tableau.com/views/Totalfuelconsumptionautomatic/Howmuchwespendondifferenttransport?:language=en-GB&:display_count=n&:origin=viz_share_link",
+                            options = {
+                                hideTabs: true,
+                                onFirstInteractive: function() {
+                                    console.log("Run this code when the viz has finished loading.");
+                                }
+                            };
 
-<section class="vertical-scrolling">
-   
-
-<head>
-    <title>Total fuel consumption</title>
-
-    <script type="text/javascript"
-	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-    <script type="text/javascript">
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "https://public.tableau.com/views/Totalfuelconsumptionupdated/Howmuchwespendondifferenttransport?:language=en-GB&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&publish=yes&:origin=viz_share_link",
-                options = {
-                    hideTabs: true,
-                    onFirstInteractive: function () {
-                        console.log("Run this code when the viz has finished loading.");
+                        var viz = new tableau.Viz(containerDiv, url, options);
+                        // Create a viz object and embed it in the container div.
                     }
-                };
 
-            var viz = new tableau.Viz(containerDiv, url, options);
-            // Create a viz object and embed it in the container div.
-        }
-    </script>
-</head>
+                </script>
+            </head>
 
-<body onload="initViz();">
-    <div id="vizContainer" style="width:800px; height:700px;"></div>
-</body>
+            <body onload="initViz();">
+                <div id="vizContainer" style="width:800px; height:700px;"></div>
+            </body>
 
-</html>
-
-</section>
+        </section>
 
 
 
+        <!--page10-->
+        <section  class="vertical-scrolling" data-anchor="page10">
 
-<section class="vertical-scrolling">
+            <h4>Two government policies to address the road CO2 emission problem: One is expanding the areas for the Low Emission Bus Zone in London. Another one is making the Ultra Low Emission Zone effective on most vehicles across London.
+                Both policies could significant reduce the CO2 emission every year.</h4>
 
-    <h4>Two government policies to address the road CO2 emission problem: One is expanding the areas for the Low Emission Bus Zone in London. Another one is making the Ultra Low Emission Zone effective on most vehicles across London.
-    Both policies could significant reduce the CO2 emission every year.</h4> 
-
-</section>
+        </section>
 
 
+        <!--page11-->
+        <section  class="vertical-scrolling" data-anchor="page11">
 
-<section class="vertical-scrolling">
+            <div class="horizontal-scrolling">
+                <iframe src="CO2.html" height="800px" width="100%" frameborder="0"></iframe>
+            </div>
 
-    <div class="horizontal-scrolling">
-    <iframe src="CO2.html" height="800px" width="100%" frameborder="0"></iframe>
-    </div>
+        </section>
 
-</section>
-</div>
 
-<!--End of zzq-->
+
+        <!--End of zzq-->
 
 
 
 
-        
-<!--        mhj-->
-        
-        <section class="vertical-scrolling">
+
+        <!--        mhj-->
+
+        <section class="vertical-scrolling" data-anchor="page12">
             <h4>Private transportation</h4>
-            
+
             <h5> The primary goal for London is to achieve carbon netral by 2050.</h5>
-            
+
             <h5>According to the mayor's transport strategy, the first step is to reach 80% of all trips in London to be made on foot, by bycycle or using public transport. </h5>
             <h5> The two maps below shows the Licensed vehicles and public charge points in London.</h5>
         </section>
-        
-        
-        
-        <section class="vertical-scrolling">
-            
-            <div class="horizontal-scrolling">
-            <iframe src="cardensity.html" height="800px" width="100%" frameBorder="0" ></iframe>
-            </div>
-            
-            <div class="horizontal-scrolling">
-            <iframe src="EV%20test.html" height="800px" width="100%" frameBorder="0" ></iframe>
-            </div>
-            
+
+
+
+        <section class="vertical-scrolling" data-anchor="page13">
+            <iframe src="cardensity.html" height="800px" width="100%" frameBorder="0"></iframe>
         </section>
-    <!--     end of   mhj-->  
-        
-        
+
+        <section class="vertical-scrolling" data-anchor="page14">
+            <iframe src="EV%20test.html" height="800px" width="100%" frameBorder="0"></iframe>
+        </section>
+        <!--     end of   mhj-->
+
+
         <!--start of Yale-->
-        <section class="vertical-scrolling">
+        <section class="vertical-scrolling" data-anchor="page15">
             <h2>Part4: Public Transportation</h2>
             <h3 style="font-size: 1.5em">In the public transport section, we will firstly look at <b>public transport accessibility index</b> and then mainly focus on <b>cycling</b>. </h3>
             <br>
             <h3>This is because rail transport does not produce significant changes (e.g. a new line is opened) for a period of less than 5 or 10 years. It therefore has less impact on people's choice of travel mode than the shared cycles, which are expanding rapidly. Also, Infrastructure development will also drive people to choose greener modes of travel which leads to the visualisation below.</h3>
             <div class="scroll-icon">
                 <p>Jump into next page</p>
-                <a href="#secondSection/1" class="icon-up-open-big"></a>
+                <a href="#page16" class="icon-up-open-big"></a>
             </div>
         </section>
 
         <!-- Public Transportation page16-->
-        <section id='page16' class="vertical-scrolling">
+        <section class="vertical-scrolling" data-anchor="page16">
             <!--Map1-->
             <div class="horizontal-scrolling">
                 <iframe src="PTAI-comparison2.html" height="700px" width="100%" frameBorder="0"></iframe>
@@ -636,9 +699,9 @@
                 <iframe src="PTAI-difference2.html" height="700px" width="100%" frameBorder="0"></iframe>
             </div>
         </section>
-        
+
         <!-- Public Transportation page17-->
-        <section id='page17' class="vertical-scrolling">
+        <section class="vertical-scrolling" data-anchor="page17">
             <!--Map3-->
             <div class="horizontal-scrolling">
                 <iframe src="cycle_lanes.html" height="700px" width="100%" frameBorder="0"></iframe>
@@ -648,14 +711,14 @@
                 <iframe src="Docking_station.html" height="700px" width="100%" frameBorder="0"></iframe>
             </div>
         </section>
-        
+
         <!-- Public Transportation page18-->
-        <section id='page17' class="vertical-scrolling">
+        <section class="vertical-scrolling" data-anchor="page18">
             <iframe src="https://flowmap.blue/1qT0vRF0Fam0LsVYgGR3PCa2gNXEWvqVP7e2ue8-qNWY/embed?v=51.499672,-0.132408,11.53,0,0&a=0&as=1&b=1&bo=75&c=1&ca=1&d=1&fe=1&lt=1&lfm=ALL&col=Default&f=50" height="700px" width="100%" frameBorder="0" allowfullscreen></iframe>
         </section>
-        
+
         <!-- Public Transportation page19-->
-        <section class="vertical-scrolling">
+        <section class="vertical-scrolling" data-anchor="page19">
             <h2>Policy Inspiration</h2>
             <img src="LTNs.png" width="60%">
             <p>Maps for new LTNs introduced in London, March-September 2020</p>
@@ -664,14 +727,16 @@
             <br>
             <p>The maps are made by <a href='http://rachelaldred.org/'>Rachel Aldred</a> who also builds a <a href='https://www.google.com/maps/d/viewer?mid=1m__ZQHAQOWGRu7-IZDP-gbV8Mr6ZfMOj&ll=51.48976696101502%2C-0.08817950000000074&z=10'>google map</a> for this project.</p>
         </section>
-         <!-- end of Yale--> 
+        <!-- end of Yale-->
     </div>
-    
+
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+    <!-- 以下行仅在使用选项 scrollOverflow:true 的情况下是必需的 --><script type="text/javascript" src="vendors/scrolloverflow.min.js"></script><script type="text/javascript" src="fullpage.js"></script>
     <script id="rendered-js">
+        
         // variables
         var $header_top = $('.header-top');
         var $nav = $('nav');
@@ -687,52 +752,53 @@
 
         // fullpage customization
         $('#fullpage').fullpage({
-            sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
+            sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C','#B8AE9C'],
             sectionSelector: '.vertical-scrolling',
             slideSelector: '.horizontal-scrolling',
             navigation: true,
             slidesNavigation: true,
-            controlArrows: false,
-            anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection','sixthSection'],
+            controlArrows: false, 
+            scrollOverflow:true,
+            anchors: ['page1','page2','page3','page4','page5','page6','page7','page8','page9','page10','page11','page12','page13','page14','page15','page16','page17','page18','page19'],  
             menu: '#menu',
 
-            afterLoad: function(anchorLink, index) {
-                $header_top.css('background', 'rgba(0, 47, 77, .3)');
-                $nav.css('background', 'rgba(0, 47, 77, .25)');
-                if (index == 5) {
-                    $('#fp-nav').hide();
-                }
-            },
+//            afterLoad: function(anchorLink, index) {
+//                $header_top.css('background', 'rgba(0, 47, 77, .3)');
+//                $nav.css('background', 'rgba(0, 47, 77, .25)');
+//                if (index == 6) {
+//                    $('#fp-nav').hide();
+//                }
+//            },
+//
+//            onLeave: function(index, nextIndex, direction) {
+//                if (index == 6) {
+//                    $('#fp-nav').show();
+//                }
+//            },
 
-            onLeave: function(index, nextIndex, direction) {
-                if (index == 5) {
-                    $('#fp-nav').show();
-                }
-            },
-
-            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-                if (anchorLink == 'fifthSection' && slideIndex == 1) {
-                    $.fn.fullpage.setAllowScrolling(false, 'up');
-                    $header_top.css('background', 'transparent');
-                    $nav.css('background', 'transparent');
-                    $(this).css('background', '#374140');
-                    $(this).find('h2').css('color', 'white');
-                    $(this).find('h3').css('color', 'white');
-                    $(this).find('p').css({
-                        'color': '#DC3522',
-                        'opacity': 1,
-                        'transform': 'translateY(0)'
-                    });
-                }
-            },
-
-            onSlideLeave: function(anchorLink, index, slideIndex, direction) {
-                if (anchorLink == 'fifthSection' && slideIndex == 1) {
-                    $.fn.fullpage.setAllowScrolling(true, 'up');
-                    $header_top.css('background', 'rgba(0, 47, 77, .3)');
-                    $nav.css('background', 'rgba(0, 47, 77, .25)');
-                }
-            }
+//            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+//                if (anchorLink == 'page4' || anchorLink == 'page7' || anchorLink == 'page16' || anchorLink == 'page17') {
+//                    $.fn.fullpage.setAllowScrolling(false, 'up');
+//                    $header_top.css('background', 'transparent');
+//                    $nav.css('background', 'transparent');
+//                    $(this).css('background', '#374140');
+//                    $(this).find('h2').css('color', 'white');
+//                    $(this).find('h3').css('color', 'white');
+//                    $(this).find('p').css({
+//                        'color': '#DC3522',
+//                        'opacity': 1,
+//                        'transform': 'translateY(0)'
+//                    });
+//                }
+//            },
+//
+//            onSlideLeave: function(anchorLink, index, slideIndex, direction) {
+//                if (anchorLink == 'page4' || anchorLink == 'page7' || anchorLink == 'page16' || anchorLink == 'page17') {
+//                    $.fn.fullpage.setAllowScrolling(true, 'up');
+//                    $header_top.css('background', 'rgba(0, 47, 77, .3)');
+//                    $nav.css('background', 'rgba(0, 47, 77, .25)');
+//                }
+//            }
         });
 
     </script>
