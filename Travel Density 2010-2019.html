@@ -49,7 +49,7 @@
 
     .map-overlay-container {
          position: absolute;
-         width: 35%;
+         width: 28%;
          top: 0;
          left: 0px;
          padding: 10px;
@@ -140,6 +140,12 @@
                 </select></p>
 
         </div> -->
+        <br>
+        <p><h2>Description</h2></p>
+        <p>This map presents London road travel density from 2010-2019, using millions of data of road traffic bulk downloads for all count point locations in UK from Department for Transport.</p><br>
+        <p>The datasets contain travel density by count points in 10 years. We joined the data with major and minor roads of London and make them to be the line data. The travel density of each road including pedal cycles, two wheeled motor vehicles, cars and taxis, buses and coaches in one year.</p>
+        <p>Due to the limitation of count cameras, some roads do not show the data of travel density. So we make it into soft pink which would not influence the experience of audience when exploring information from the map.</p>
+        <p>The overall travel density has not changed a lot through the decade, high travel density roads appear on major trunk, for minor roads the travel density increases these years.</p>
     </div>
   </div>
 
@@ -151,7 +157,7 @@
       style: 'mapbox://styles/mapbox/light-v10',
       // style: 'mapbox://styles/mapbox/navigation-preview-day-v4',
       // style :'mapbox://styles/mapbox/satellite-streets-v11',
-      zoom: 9,
+      zoom: 9.5,
       center: [-0.12599363, 51.49479144]
     });
 
