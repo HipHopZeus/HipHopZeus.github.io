@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- prepare a DOM container with width and height -->
-    <div id="main" style="width: 100%;height:800px;"></div>
+    <div id="main" style="width: 100%;height:600px;"></div>
     <script type="text/javascript">
         // based on prepared DOM, initialize echarts instance
         var myChart = echarts.init(document.getElementById('main'));
@@ -48,7 +48,7 @@
             },{
                 subtext:'Year 2010 - 2021',
                 left:'50%',
-                top:'38%',
+                top:'35%',
                 textAlign:'center',
                 subtextStyle:{
                     color: 'black',
@@ -77,12 +77,12 @@
                 var top = idx * 33.3;
                 return {
                     type: 'pie',
-                    radius: [40, 100],
+                    radius: [20, 60],
                     center: ['50%','100%'],
                     top: top + '%',
                     height: '25%',
                     left: 'center',
-                    width: 500,
+                    width: 400,
                     itemStyle: {
                         borderColor: '#fff',
                         borderWidth: 1
