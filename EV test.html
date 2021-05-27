@@ -124,7 +124,7 @@
         var map = new mapboxgl.Map({
            container: 'map', // container element id
           //style: 'mapbox://styles/jamie96/ckohesjdu6v7r17nowwne9eun',
-          style: 'mapbox://styles/mapbox/dark-v10',
+          style: 'mapbox://styles/mapbox/light-v10',
           center: [-0.1789619958494768, 51.488], // initial map center in [lon, lat]
           zoom: 9.6
         });
@@ -151,18 +151,18 @@
               'circle-color': [
                 'match',
                  ['get', 'dateCreated'],
-                2012, '#005f73',
-                2013, '#0a9396',
-                2014, '#94d2bd',
-                2015, '#e9d8a6',
-                2016, '#ee9b00',
-                2017, '#ca6702',
-                2018, '#bb3e03',
-                2019, '#ae2012',
-                2020, '#9b2226',
+                2012, '#2DC4B2',
+                2013, '#3BB3C3',
+                2014, '#669EC4',
+                2015, '#8B88B6',
+                2016, '#A2719B',
+                2017, '#AA5E79',
+                2018, '#60b8eb',
+                2019, '#7bef81',
+                2020, '#e637db',
                 /* other */ '#ccc'
               ],
-              'circle-opacity': 0.7
+              'circle-opacity': 0.5
             },
             filter: ['all',filterYears,filterLocationType]
            
